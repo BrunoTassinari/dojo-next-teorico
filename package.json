@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome lint ."
+    "lint": "biome lint .",
+    "api": "json-server --watch db.json --port 3001 --delay $((RANDOM % 1500 + 300))"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "json-server": "0.17.3",
     "lucide": "^1.3.0",
     "lucide-react": "^1.3.0",
     "next": "16.2.3",
